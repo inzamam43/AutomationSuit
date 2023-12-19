@@ -4,13 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run",
+    "test:chrome": "cypress run --browser chrome",
+    "test:firefox": "cypress run --browser firefox",
+    "test:electron": "cypress run --browser electron",
+    "test:webkit": "cypress run --browser webkit",
+    "test:all": "npm run test:chrome && npm run test:firefox && npm run test:electron"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cypress": "^13.6.1",
-    "cypress-mochawesome-reporter": "^3.7.0"
+    "cypress-mochawesome-reporter": "^3.7.0",
+    "yarn": "^1.22.21"
   },
   "devDependencies": {
     "@cypress/code-coverage": "^3.12.13",

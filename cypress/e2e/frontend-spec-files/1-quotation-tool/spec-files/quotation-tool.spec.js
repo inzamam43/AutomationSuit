@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import CreatingQuotPage from "../../../pages/1-CreatingQuotePage/CreatingQuotePage"
+import CreatingQuotPage from "../../../../pages/1-CreatingQuotePage/CreatingQuotePage"
 const creatingQuotPage = new CreatingQuotPage();
 describe('example to-do app', () => {
   beforeEach(() => {

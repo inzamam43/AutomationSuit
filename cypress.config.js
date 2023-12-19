@@ -28,7 +28,8 @@ module.exports = defineConfig({
     specPattern: 'cypress/e2e/**/*.spec.js',
     excludeSpecPattern: "other/path/to/**/*.js",
     supportFile: 'cypress/support/commands.js',
-    supportFile: 'cypress/support/e2e.js'
+    supportFile: 'cypress/support/e2e.js',
+    
 
   },
 });

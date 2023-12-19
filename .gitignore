@@ -2,3 +2,5 @@ node_modules
 screenshots
 videos
 mochawesome-report
+cypress/reports
+cypress/downloads
