@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress run",
+    "TestbackendFiles": "npx cypress run --spec cypress/e2e/backend-spec-files/**/*.spec.js",
     "test:chrome": "cypress run --browser chrome",
     "test:firefox": "cypress run --browser firefox",
     "test:electron": "cypress run --browser electron",
@@ -20,6 +21,7 @@
   },
   "devDependencies": {
     "@cypress/code-coverage": "^3.12.13",
+    "@cypress/grep": "^4.0.1",
     "cypress-xpath": "^2.0.1",
     "mocha": "^10.2.0",
     "mocha-foo-reporter": "^0.0.1",

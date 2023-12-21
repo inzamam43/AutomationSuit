@@ -22,3 +22,4 @@ import 'cypress-mochawesome-reporter/register';
 // require('./commands')
 
 require('cypress-xpath');
+require('@cypress/grep')()

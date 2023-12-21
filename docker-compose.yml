@@ -7,6 +7,6 @@ services:
 
   cypress-tests-2:
     image: cypressbase
-    command: ["npx", "cypress", "run", "--spec", "path/to/test/file2.spec.js"]
+    command: ["npx", "cypress", "run", "--spec", "cypress/e2e/backend-spec-files/**/*.spec.js"]
 
   # Add more services as needed for additional parallelization

@@ -2,7 +2,7 @@
  
  "env":{ 
   "baseUrl":"https://flex-quote.netsolapp.io/?x-api-key=",
-  "apiKey":"pk_unity_a73df780-31cc-11ee-9728-8edc24af72f1",
+  "apiKey":"pk_unity_ff1e344c-847e-11ee-a56d-268037cdfc1b",
   "apiBaseUrl":"https://dev-api.netsolapp.io/marketplace/calculate/"
 }
 }
