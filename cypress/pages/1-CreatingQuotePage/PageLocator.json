@@ -1,6 +1,0 @@
-{
-    "pageCssSelector":{
-        "tabBar":"button.Mui-selected:contains"
-        
-    }
-}

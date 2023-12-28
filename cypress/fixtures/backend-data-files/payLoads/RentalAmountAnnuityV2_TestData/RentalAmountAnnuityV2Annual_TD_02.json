@@ -1,0 +1,830 @@
+{
+
+"AnnualV2":{
+    "requestParam": {
+        "Apr": 2.2,
+        "contractTerms": 108,
+        "FinancedAmount": 120000,
+        "rentalFrequency": "Annual",
+        "rentalMode": "Advance",
+        "residualValue": 1000,
+        "StructureRental": [],
+        "ProductRateConversionMethod": "Simple",
+        "productType": "None"
+    },
+    "ExtensionDays": 0,
+    "NumberOfAdvanceRentals": 4,
+    "RentalCalculationMethod": "Annuity",
+    "RentalNumberForVatDefferal": 6,
+    "StartDate": "2023-12-04",
+    "VatPercentage": 0,
+    "charges": [],
+    "VatAmount": 2400,
+    "VatTreatment": "VATDeferral",
+    "AllRentalStructuresProvided": false
+  
+},
+"output":{
+    
+        "rentalSummary": [
+            {
+                "startTerm": 1,
+                "endTerm": 5,
+                "rentalAmount": 9938.22,
+                "rentalType": "Auto"
+            },
+            {
+                "startTerm": 6,
+                "endTerm": 6,
+                "rentalAmount": 12338.22,
+                "rentalType": "Auto"
+            },
+            {
+                "startTerm": 7,
+                "endTerm": 13,
+                "rentalAmount": 9938.22,
+                "rentalType": "Auto"
+            }
+        ],
+        "updatedFinancedAmount": 122400
+    
+},
+"CalculateApr":{
+   "rentalMode": "Advance",
+   "FinancedAmount": 122400,
+   "AdditionalInterestWithoutTax": 0,
+   "ContractStartDate": "2023-11-27",
+   "RentalFrequency": "Annual",
+   "IrrRoundingDetail": {
+       "IsRoundingRequired": true,
+       "Upto": 2
+   },
+   "RentalCalculationMethod": "Annuity",
+   "residualValue": 0,
+   "IsCompounded": false,
+   "CompoundingFrequency": "",
+   "RentalSlabs": [
+       {
+           "StartTerm": 1,
+           "EndTerm": 5,
+           "Amount": 9938.22,
+           "RentalType": "Auto"
+       },
+       {
+           "StartTerm": 6,
+           "EndTerm": 6,
+           "Amount":  12338.22,
+           "RentalType": "Auto"
+       },
+       {
+           "StartTerm": 7,
+           "EndTerm": 13,
+           "Amount":9938.22,
+           "RentalType": "Auto"
+       }
+   ],
+   "balloonParamForAnnuity": {
+       "NumberOfAdvanceRentals": 4
+     
+   },
+   "ProductType": "None"
+},
+"outputAPR":{
+    "irr": 2.2
+},
+"CreateRentalAmortization":{
+    "startDate": "2023-11-27",
+    "ExtensionDays": 0,
+    "AllRentalStructuresProvided": true,
+    "requestParam": {
+        "Apr": 2.2,
+        "contractTerms": 108,
+        "FinancedAmount": 122400,
+        "ProductRateConversionMethod": "Simple",
+        "productType": "None",
+        "rentalFrequency": "Annual",
+        "rentalMode": "Advance",
+        "residualValue": 1000,
+        "StructureRental": [
+            {
+                "Amount": 9938.22,
+                "StartTerm": 1,
+                "EndTerm": 5,
+                "RentalType": "Auto",
+                "RentalFrequency": "Annual"
+            },
+            {
+                "Amount": 12338.22,
+                "StartTerm": 6,
+                "EndTerm": 6,
+                "RentalType": "Auto",
+                "RentalFrequency": "Annual"
+            },
+            {
+                "Amount": 9938.22,
+                "StartTerm": 7,
+                "EndTerm": 13,
+                "RentalType": "Auto",
+                "RentalFrequency": "Annual"
+            }
+           ]
+    },
+    "balloonParamForAnnuity": {
+        "NumberOfAdvanceRentals": 4
+        
+    }
+},
+
+"outputCreateAmort":{
+    "repaymentPlan": [
+        {
+            "rentalNumber": 1,
+            "openingPrincipal": 122400,
+            "rentalAmount": 9938.22,
+            "charges": 0,
+            "rentalPrincipal": 9938.22,
+            "rentalInterest": 0,
+            "rentalDueDate": "2023-11-27T00:00:00",
+            "periodicInterest": 0,
+            "compoundInterest": 0,
+            "closingPrincipal": 112461.78,
+            "rentalType": "Auto"
+        },
+        {
+            "rentalNumber": 2,
+            "openingPrincipal": 112461.78,
+            "rentalAmount": 9938.22,
+            "charges": 0,
+            "rentalPrincipal": 9938.22,
+            "rentalInterest": 0,
+            "rentalDueDate": "2023-11-27T00:00:00",
+            "periodicInterest": 0,
+            "compoundInterest": 0,
+            "closingPrincipal": 102523.56,
+            "rentalType": "Auto"
+        },
+        {
+            "rentalNumber": 3,
+            "openingPrincipal": 102523.56,
+            "rentalAmount": 9938.22,
+            "charges": 0,
+            "rentalPrincipal": 9938.22,
+            "rentalInterest": 0,
+            "rentalDueDate": "2023-11-27T00:00:00",
+            "periodicInterest": 0,
+            "compoundInterest": 0,
+            "closingPrincipal": 92585.34,
+            "rentalType": "Auto"
+        },
+        {
+            "rentalNumber": 4,
+            "openingPrincipal": 92585.34,
+            "rentalAmount": 9938.22,
+            "charges": 0,
+            "rentalPrincipal": 9938.22,
+            "rentalInterest": 0,
+            "rentalDueDate": "2023-11-27T00:00:00",
+            "periodicInterest": 0,
+            "compoundInterest": 0,
+            "closingPrincipal": 82647.12,
+            "rentalType": "Auto"
+        },
+        {
+            "rentalNumber": 5,
+            "openingPrincipal": 82647.12,
+            "rentalAmount": 9938.22,
+            "charges": 0,
+            "rentalPrincipal": 8119.99,
+            "rentalInterest": 1818.23,
+            "rentalDueDate": "2024-11-27T00:00:00",
+            "periodicInterest": 1818.23,
+            "compoundInterest": 0.0,
+            "closingPrincipal": 74527.13,
+            "rentalType": "Auto"
+        },
+        {
+            "rentalNumber": 6,
+            "openingPrincipal": 74527.13,
+            "rentalAmount": 12338.22,
+            "charges": 0,
+            "rentalPrincipal": 10698.63,
+            "rentalInterest": 1639.59,
+            "rentalDueDate": "2025-11-27T00:00:00",
+            "periodicInterest": 1639.59,
+            "compoundInterest": 0.0,
+            "closingPrincipal": 63828.5,
+            "rentalType": "Auto"
+        },
+        {
+            "rentalNumber": 7,
+            "openingPrincipal": 63828.5,
+            "rentalAmount": 9938.22,
+            "charges": 0,
+            "rentalPrincipal": 8534.0,
+            "rentalInterest": 1404.22,
+            "rentalDueDate": "2026-11-27T00:00:00",
+            "periodicInterest": 1404.22,
+            "compoundInterest": 0.0,
+            "closingPrincipal": 55294.5,
+            "rentalType": "Auto"
+        },
+        {
+            "rentalNumber": 8,
+            "openingPrincipal": 55294.5,
+            "rentalAmount": 9938.22,
+            "charges": 0,
+            "rentalPrincipal": 8721.75,
+            "rentalInterest": 1216.47,
+            "rentalDueDate": "2027-11-27T00:00:00",
+            "periodicInterest": 1216.47,
+            "compoundInterest": 0.0,
+            "closingPrincipal": 46572.75,
+            "rentalType": "Auto"
+        },
+        {
+            "rentalNumber": 9,
+            "openingPrincipal": 46572.75,
+            "rentalAmount": 9938.22,
+            "charges": 0,
+            "rentalPrincipal": 8913.62,
+            "rentalInterest": 1024.6,
+            "rentalDueDate": "2028-11-27T00:00:00",
+            "periodicInterest": 1024.6,
+            "compoundInterest": 0.0,
+            "closingPrincipal": 37659.13,
+            "rentalType": "Auto"
+        },
+        {
+            "rentalNumber": 10,
+            "openingPrincipal": 37659.13,
+            "rentalAmount": 9938.22,
+            "charges": 0,
+            "rentalPrincipal": 9109.72,
+            "rentalInterest": 828.5,
+            "rentalDueDate": "2029-11-27T00:00:00",
+            "periodicInterest": 828.5,
+            "compoundInterest": 0.0,
+            "closingPrincipal": 28549.41,
+            "rentalType": "Auto"
+        },
+        {
+            "rentalNumber": 11,
+            "openingPrincipal": 28549.41,
+            "rentalAmount": 9938.22,
+            "charges": 0,
+            "rentalPrincipal": 9310.14,
+            "rentalInterest": 628.08,
+            "rentalDueDate": "2030-11-27T00:00:00",
+            "periodicInterest": 628.08,
+            "compoundInterest": 0.0,
+            "closingPrincipal": 19239.27,
+            "rentalType": "Auto"
+        },
+        {
+            "rentalNumber": 12,
+            "openingPrincipal": 19239.27,
+            "rentalAmount": 9938.22,
+            "charges": 0,
+            "rentalPrincipal": 9514.96,
+            "rentalInterest": 423.26,
+            "rentalDueDate": "2031-11-27T00:00:00",
+            "periodicInterest": 423.26,
+            "compoundInterest": 0.0,
+            "closingPrincipal": 9724.31,
+            "rentalType": "Auto"
+        },
+        {
+            "rentalNumber": 13,
+            "openingPrincipal": 9724.31,
+            "rentalAmount": 9938.22,
+            "charges": 0,
+            "rentalPrincipal": 9724.31,
+            "rentalInterest": 213.91,
+            "rentalDueDate": "2032-11-27T00:00:00",
+            "periodicInterest": 213.91,
+            "compoundInterest": 0.0,
+            "closingPrincipal": 0.0,
+            "rentalType": "Auto"
+        }
+    ],
+    "irr": 0
+},
+"presentValueCal":{
+    "DiscountRate":2.2,
+    "StartDate": "2023-11-21",
+    "RentalMode": "Advance",
+    "rentalFrequency": "Annual",
+    "RentalCalculationMethod": "Annuity",
+    "PaymentPlan": [
+        {
+            "rentalNumber": 1,
+            "rentalAmount": 9938.22,
+            "rentalType": "Structured"
+        },
+        {
+            "rentalNumber": 2,
+            "rentalAmount": 9938.22,
+            "rentalType": "Structured"
+        },
+        {
+            "rentalNumber": 3,
+            "rentalAmount":  9938.22,
+            "rentalType": "Structured"
+        },
+        {
+            "rentalNumber": 4,
+            "rentalAmount": 9938.22,
+            "rentalType": "Structured"
+        },
+        {
+            "rentalNumber": 5,
+            "rentalAmount": 9938.22,
+            "rentalType": "Structured"
+        },
+        {
+            "rentalNumber": 6,
+            "rentalAmount": 12338.22,
+            "rentalType": "Structured"
+        },
+        {
+            "rentalNumber": 7,
+            "rentalAmount": 9938.22,
+            "rentalType": "Structured"
+        },
+        {
+            "rentalNumber": 8,
+            "rentalAmount": 9938.22,
+            "rentalType": "Structured"
+        },
+        {
+            "rentalNumber": 9,
+            "rentalAmount": 9938.22,
+            "rentalType": "Structured"
+        },
+        {
+            "rentalNumber": 10,
+            "rentalAmount": 9938.22,
+            "rentalType": "Structured"
+        },
+        {
+            "rentalNumber": 11,
+            "rentalAmount": 9938.22,
+            "rentalType": "Structured"
+        },
+        {
+            "rentalNumber": 12,
+            "rentalAmount": 9938.22,
+            "rentalType": "Structured"
+        },
+        {
+            "rentalNumber": 13,
+            "rentalAmount": 9938.22,
+            "rentalType": "Structured"
+        }
+      
+    ],
+   "balloonParamForAnnuity": {
+        "NumberOfAdvanceRentals": 4
+   
+    },
+    "ProductType": "None",
+    "ResidualValue": 0
+},
+"outputPresentValue":{
+    "presentValue": 122399.9412
+},
+"AnnualV2_120Term":{
+    "requestParam": {
+        "Apr": 5.5,
+        "contractTerms": 120,
+        "FinancedAmount": 120000,
+        "rentalFrequency": "Annual",
+        "rentalMode": "Advance",
+        "residualValue": 1000,
+        "StructureRental": [
+           {
+            "startTerm": 6,
+            "endTerm": 6,
+            "rentalType": "Structured",
+            "amount": 5000
+        }
+        ],
+        "ProductRateConversionMethod": "Simple",
+        "productType": "RV"
+    },
+    "ExtensionDays": 0,
+    "NumberOfAdvanceRentals": 1,
+    "RentalCalculationMethod": "Annuity",
+    "RentalNumberForVatDefferal": 3,
+    "StartDate": "2023-12-04",
+    "VatPercentage": 0,
+    "charges": [],
+    "VatAmount": 2400,
+    "VatTreatment": "VATDeferral",
+    "AllRentalStructuresProvided": true
+  
+},
+"output120_TermV2":{
+    "rentalSummary": [
+        {
+            "startTerm": 1,
+            "endTerm": 2,
+            "rentalAmount": 14906.82,
+            "rentalType": "Auto"
+        },
+        {
+            "startTerm": 3,
+            "endTerm": 3,
+            "rentalAmount": 17306.82,
+            "rentalType": "Auto"
+        },
+        {
+            "startTerm": 4,
+            "endTerm": 5,
+            "rentalAmount": 14906.82,
+            "rentalType": "Auto"
+        },
+        {
+            "startTerm": 6,
+            "endTerm": 6,
+            "rentalAmount": 5000,
+            "rentalType": "Structured"
+        },
+        {
+            "startTerm": 7,
+            "endTerm": 11,
+            "rentalAmount": 14906.82,
+            "rentalType": "Auto"
+        },
+        {
+            "startTerm": 12,
+            "endTerm": 12,
+            "rentalAmount": 1000,
+            "rentalType": "Residual value"
+        }
+    ],
+    "updatedFinancedAmount": 122400
+},
+"CalculateApr_120Term":
+
+{
+   "rentalMode": "Advance",
+   "FinancedAmount": 122400,
+   "AdditionalInterestWithoutTax": 0,
+   "ContractStartDate": "2023-11-27",
+   "RentalFrequency": "Annual",
+   "IrrRoundingDetail": {
+       "IsRoundingRequired": true,
+       "Upto": 2
+   },
+   "RentalCalculationMethod": "Annuity",
+   "residualValue": 1000,
+   "IsCompounded": false,
+   "CompoundingFrequency": "",
+   "RentalSlabs": [
+       {
+           "StartTerm": 1,
+           "EndTerm": 2,
+           "Amount":  14906.82,
+           "RentalType": "Auto"
+       },
+       {
+           "StartTerm": 3,
+           "EndTerm": 3,
+           "Amount":  17306.82,
+           "RentalType": "Auto"
+       },
+       {
+           "StartTerm": 4,
+           "EndTerm": 5,
+           "Amount":14906.82,
+           "RentalType": "Auto"
+       },
+       {
+           "StartTerm": 6,
+           "EndTerm": 6,
+           "Amount":5000,
+           "RentalType": "Structured"
+       },
+{
+           "StartTerm": 7,
+           "EndTerm": 11,
+           "Amount":14906.82,
+           "RentalType": "Auto"
+       }
+   ],
+   "balloonParamForAnnuity": {
+       "NumberOfAdvanceRentals": 1
+     
+   },
+   "ProductType": "RV"
+},
+
+"outputCalculate_120Term":{
+    "irr": 5.5
+},
+"CreateRental_120Term":
+{
+    "startDate": "2023-11-27",
+    "ExtensionDays": 0,
+    "AllRentalStructuresProvided": true,
+    "requestParam": {
+        "Apr": 5.5,
+        "contractTerms": 120,
+        "FinancedAmount": 122400,
+        "ProductRateConversionMethod": "Simple",
+        "productType": "RV",
+        "rentalFrequency": "Annual",
+        "rentalMode": "Advance",
+        "residualValue": 1000,
+        "StructureRental": [
+            {
+                "Amount": 14906.82,
+                "StartTerm": 1,
+                "EndTerm": 2,
+                "RentalType": "Auto",
+                "RentalFrequency": "Annual"
+            },
+            {
+                "Amount":  17306.82,
+                "StartTerm": 3,
+                "EndTerm": 3,
+                "RentalType": "Auto",
+                "RentalFrequency": "Annual"
+            },
+             {
+                "Amount": 14906.82,
+                "StartTerm": 4,
+                "EndTerm": 5,
+                "RentalType": "Auto",
+                "RentalFrequency": "Annual"
+            },
+             {
+                "Amount": 5000,
+                "StartTerm": 6,
+                "EndTerm": 6,
+                "RentalType": "Structured",
+                "RentalFrequency": "Annual"
+            },
+            {
+                "Amount": 14906.82,
+                "StartTerm": 7,
+                "EndTerm": 11,
+                "RentalType": "Auto",
+                "RentalFrequency": "Annual"
+            }
+           ]
+    },
+    "balloonParamForAnnuity": {
+        "NumberOfAdvanceRentals": 1
+        
+    }
+},
+"outputCreaterentalAnnual":{
+    "repaymentPlan": [
+        {
+            "rentalNumber": 1,
+            "openingPrincipal": 122400,
+            "rentalAmount": 14906.82,
+            "charges": 0,
+            "rentalPrincipal": 14906.82,
+            "rentalInterest": 0,
+            "rentalDueDate": "2023-11-27T00:00:00",
+            "periodicInterest": 0,
+            "compoundInterest": 0,
+            "closingPrincipal": 107493.18,
+            "rentalType": "Auto"
+        },
+        {
+            "rentalNumber": 2,
+            "openingPrincipal": 107493.18,
+            "rentalAmount": 14906.82,
+            "charges": 0,
+            "rentalPrincipal": 8994.7,
+            "rentalInterest": 5912.12,
+            "rentalDueDate": "2024-11-27T00:00:00",
+            "periodicInterest": 5912.12,
+            "compoundInterest": 0.0,
+            "closingPrincipal": 98498.48,
+            "rentalType": "Auto"
+        },
+        {
+            "rentalNumber": 3,
+            "openingPrincipal": 98498.48,
+            "rentalAmount": 17306.82,
+            "charges": 0,
+            "rentalPrincipal": 11889.41,
+            "rentalInterest": 5417.41,
+            "rentalDueDate": "2025-11-27T00:00:00",
+            "periodicInterest": 5417.41,
+            "compoundInterest": 0.0,
+            "closingPrincipal": 86609.07,
+            "rentalType": "Auto"
+        },
+        {
+            "rentalNumber": 4,
+            "openingPrincipal": 86609.07,
+            "rentalAmount": 14906.82,
+            "charges": 0,
+            "rentalPrincipal": 10143.33,
+            "rentalInterest": 4763.49,
+            "rentalDueDate": "2026-11-27T00:00:00",
+            "periodicInterest": 4763.49,
+            "compoundInterest": 0.0,
+            "closingPrincipal": 76465.74,
+            "rentalType": "Auto"
+        },
+        {
+            "rentalNumber": 5,
+            "openingPrincipal": 76465.74,
+            "rentalAmount": 14906.82,
+            "charges": 0,
+            "rentalPrincipal": 10701.21,
+            "rentalInterest": 4205.61,
+            "rentalDueDate": "2027-11-27T00:00:00",
+            "periodicInterest": 4205.61,
+            "compoundInterest": 0.0,
+            "closingPrincipal": 65764.53,
+            "rentalType": "Auto"
+        },
+        {
+            "rentalNumber": 6,
+            "openingPrincipal": 65764.53,
+            "rentalAmount": 5000,
+            "charges": 0,
+            "rentalPrincipal": 1382.96,
+            "rentalInterest": 3617.04,
+            "rentalDueDate": "2028-11-27T00:00:00",
+            "periodicInterest": 3617.04,
+            "compoundInterest": 0.0,
+            "closingPrincipal": 64381.57,
+            "rentalType": "Structured"
+        },
+        {
+            "rentalNumber": 7,
+            "openingPrincipal": 64381.57,
+            "rentalAmount": 14906.82,
+            "charges": 0,
+            "rentalPrincipal": 11365.84,
+            "rentalInterest": 3540.98,
+            "rentalDueDate": "2029-11-27T00:00:00",
+            "periodicInterest": 3540.98,
+            "compoundInterest": 0.0,
+            "closingPrincipal": 53015.73,
+            "rentalType": "Auto"
+        },
+        {
+            "rentalNumber": 8,
+            "openingPrincipal": 53015.73,
+            "rentalAmount": 14906.82,
+            "charges": 0,
+            "rentalPrincipal": 11990.96,
+            "rentalInterest": 2915.86,
+            "rentalDueDate": "2030-11-27T00:00:00",
+            "periodicInterest": 2915.86,
+            "compoundInterest": 0.0,
+            "closingPrincipal": 41024.77,
+            "rentalType": "Auto"
+        },
+        {
+            "rentalNumber": 9,
+            "openingPrincipal": 41024.77,
+            "rentalAmount": 14906.82,
+            "charges": 0,
+            "rentalPrincipal": 12650.46,
+            "rentalInterest": 2256.36,
+            "rentalDueDate": "2031-11-27T00:00:00",
+            "periodicInterest": 2256.36,
+            "compoundInterest": 0.0,
+            "closingPrincipal": 28374.31,
+            "rentalType": "Auto"
+        },
+        {
+            "rentalNumber": 10,
+            "openingPrincipal": 28374.31,
+            "rentalAmount": 14906.82,
+            "charges": 0,
+            "rentalPrincipal": 13346.24,
+            "rentalInterest": 1560.58,
+            "rentalDueDate": "2032-11-27T00:00:00",
+            "periodicInterest": 1560.58,
+            "compoundInterest": 0.0,
+            "closingPrincipal": 15028.07,
+            "rentalType": "Auto"
+        },
+        {
+            "rentalNumber": 11,
+            "openingPrincipal": 15028.07,
+            "rentalAmount": 14906.82,
+            "charges": 0,
+            "rentalPrincipal": 14080.28,
+            "rentalInterest": 826.54,
+            "rentalDueDate": "2033-11-27T00:00:00",
+            "periodicInterest": 826.54,
+            "compoundInterest": 0.0,
+            "closingPrincipal": 947.79,
+            "rentalType": "Auto"
+        },
+        {
+            "rentalNumber": 12,
+            "openingPrincipal": 947.79,
+            "rentalAmount": 1000,
+            "charges": 0,
+            "rentalPrincipal": 947.79,
+            "rentalInterest": 52.21,
+            "rentalDueDate": "2034-11-27T00:00:00",
+            "periodicInterest": 52.21,
+            "compoundInterest": 0.0,
+            "closingPrincipal": 0.0,
+            "rentalType": "ResidualValue"
+        }
+    ],
+    "irr": 0
+},
+"presentValue_120TermAnnual":
+{
+    "DiscountRate":5.5,
+    "StartDate": "2023-11-21",
+    "RentalMode": "Advance",
+    "rentalFrequency": "Annual",
+    "RentalCalculationMethod": "Annuity",
+    "PaymentPlan": [
+        {
+            "rentalNumber": 1,
+            "rentalAmount":14906.82,
+            "rentalType": "Structured"
+        },
+        {
+            "rentalNumber": 2,
+            "rentalAmount":14906.82,
+            "rentalType": "Structured"
+        },
+        {
+            "rentalNumber": 3,
+            "rentalAmount": 17306.82,
+            "rentalType": "Structured"
+        },
+        {
+            "rentalNumber": 4,
+            "rentalAmount":14906.82,
+            "rentalType": "Structured"
+        },
+        {
+            "rentalNumber": 5,
+            "rentalAmount":14906.82,
+            "rentalType": "Structured"
+        },
+        {
+            "rentalNumber": 6,
+            "rentalAmount": 5000,
+            "rentalType": "Structured"
+        },
+        {
+            "rentalNumber": 7,
+            "rentalAmount":14906.82,
+            "rentalType": "Structured"
+        },
+        {
+            "rentalNumber": 8,
+            "rentalAmount":14906.82,
+            "rentalType": "Structured"
+        },
+        {
+            "rentalNumber": 9,
+            "rentalAmount":14906.82,
+            "rentalType": "Structured"
+        },
+        {
+            "rentalNumber": 10,
+            "rentalAmount":14906.82,
+            "rentalType": "Structured"
+        },
+        {
+            "rentalNumber": 11,
+            "rentalAmount":14906.82,
+            "rentalType": "Structured"
+        }
+      
+      
+    ],
+   "balloonParamForAnnuity": {
+        "NumberOfAdvanceRentals": 1
+   
+    },
+    "ProductType": "RV",
+    "ResidualValue": 1000
+},
+
+"outputPresentvalue":{
+    "presentValue": 122399.9994
+}
+
+
+
+
+
+
+
+
+
+}

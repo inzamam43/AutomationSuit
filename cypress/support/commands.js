@@ -36,4 +36,18 @@ Cypress.Commands.add('getPageLocator', (filePath) => {
             return pagelocator
         })
         })
-    
+// cypress/support/commands.js
+
+Cypress.Commands.add('loadDataFromFiles', (dataFiles) => {
+    const loadedData = {};
+  
+    return Cypress.Promise.all(
+      dataFiles.map((filePath) => {
+        return cy.fixture(filePath).then((data) => {
+          const key = Cypress._.last(filePath.split('/')).replace('.json', '');
+          loadedData[key] = data;
+        });
+      })
+    ).then(() => loadedData);
+  });
+  
