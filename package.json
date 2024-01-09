@@ -20,6 +20,7 @@
     "yarn": "^1.22.21"
   },
   "devDependencies": {
+    "@applitools/eyes-cypress": "^3.40.4",
     "@cypress/code-coverage": "^3.12.13",
     "@cypress/grep": "^4.0.1",
     "cypress-xpath": "^2.0.1",
