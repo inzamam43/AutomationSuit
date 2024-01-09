@@ -9,8 +9,8 @@ pipeline {
         stage('Build and Test Chrome') {
             steps {
                 script {
-                    bat 'npm install'
-                    bat 'npm run TestbackendFiles'
+                    sh 'npm install'
+                    sh 'npm run TestbackendFiles'
                 }
             }
         }
