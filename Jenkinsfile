@@ -5,19 +5,20 @@ pipeline {
     //     CHROME_PARALLELISM = 4
     //     FIREFOX_PARALLELISM = 2
     // }
-
-    stages {
+ stages {
         stage('Build and Test Chrome') {
             steps {
                 script {
-                     {
-            bat 'npm install'
-            bat 'npm run TestbackendFiles'
-        }
+                    bat 'npm install'
+                    bat 'npm run TestbackendFiles'
                 }
             }
         }
 
+        // Add more stages if needed
+
+    }
+   
     //     stage('Build and Test Firefox') {
     //         steps {
     //             script {
@@ -34,5 +35,4 @@ pipeline {
     //         // Clean up or post-processing steps if needed
     //     }
     // }
-}
 }
