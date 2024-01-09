@@ -1,14 +1,19 @@
 pipeline {
     agent any
 
-    // environment {
-    //     CHROME_PARALLELISM = 4
-    //     FIREFOX_PARALLELISM = 2
-    // }
- stages {
-        stage('Build and Test Chrome') {
+    stages {
+        stage('Checkout SCM') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Run Terminal Commands') {
             steps {
                 script {
+                    // Replace the following commands with your actual terminal commands
+                    sh 'echo "Hello, Jenkins!"'
+                    sh 'ls -la'
                     sh 'npm install'
                     sh 'npm run TestbackendFiles'
                 }
@@ -16,23 +21,7 @@ pipeline {
         }
 
         // Add more stages if needed
-
     }
-   
-    //     stage('Build and Test Firefox') {
-    //         steps {
-    //             script {
-    //                 sh 'npm install'
-    //                 sh 'npm start &'
-    //                 sh "npx cypress run --record --parallel --group firefox --browser firefox --spec cypress/e2e/app.cy.js,cypress/e2e/login.cy.js,cypress/e2e/about.cy.js"
-    //             }
-    //         }
-    //     }
-    // }
 
-    // post {
-    //     always {
-    //         // Clean up or post-processing steps if needed
-    //     }
-    // }
+    // Add post section or other pipeline sections if needed
 }
