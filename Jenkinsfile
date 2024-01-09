@@ -12,10 +12,10 @@ pipeline {
             steps {
                 script {
                     // Replace the following commands with your actual terminal commands
-                    sh 'echo "Hello, Jenkins!"'
-                    sh 'ls -la'
-                    sh 'npm install'
-                    sh 'npm run TestbackendFiles'
+                    bat 'echo "Hello, Jenkins!"'
+                    bat 'ls -la'
+                    bat 'npm install'
+                    bat 'npm run TestbackendFiles'
                 }
             }
         }
